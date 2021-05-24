@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true">
+
+       <!-- <ImageView
+            android:id="@+id/imagicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            />-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imagicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            app:civ_border_width="1dp"
+            android:src="@drawable/boy"
+            app:civ_border_color="@color/login_button_bg"
+            />
+
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/listTxtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="NAS DUBAI"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/arrowImg"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imagicon"
+            android:singleLine="true" />
+
+
+        <com.algubra.manager.CustomTextViewNormal
+            android:id="@+id/listTxtClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/listTxtTitle"
+            android:layout_toLeftOf="@+id/arrowImg"
+            android:text="NAS DUBAI"
+            android:textSize="11sp"
+            android:textColor="@color/login_hint_textcolor"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/imagicon"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/arrowImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_green" />
+    </RelativeLayout>
+
+</RelativeLayout>

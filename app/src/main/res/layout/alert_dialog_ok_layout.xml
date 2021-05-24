@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/dialogtopcurve"
+            android:gravity="center"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:scaleType="fitCenter" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/white"
+             />
+
+    </RelativeLayout>
+    <!--android:background="@drawable/round"
+    android:src="@drawable/questionmark_icon"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialogbottomcurve">
+
+
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/alertHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center_horizontal"
+            android:text="Alert"
+            android:textColor="#ff000000"
+            android:textSize="18sp" />
+
+        <com.algubra.manager.CustomTextViewNormal
+            android:id="@+id/text_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alertHead"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Password Missmatch"
+            android:textColor="@color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/text_dialog"
+            android:gravity="center_horizontal"
+            android:weightSum="100">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="100">
+                <Button
+                    android:id="@+id/btn_Ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/btnBgCommon"
+                    android:text="OK"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscroll"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlExamSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight=".50"
+            android:background="#AEACAA">
+
+            <ImageView
+                android:id="@+id/imageNewsRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/exam_schedule"
+                android:layout_above="@+id/textMoreImage"/>
+
+            <com.algubra.manager.CustomTextViewBold
+                android:id="@+id/textMoreImage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/exam_schedule"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlClassTimeTable"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight=".50"
+            android:background="#3082D3">
+
+            <ImageView
+                android:id="@+id/imageNewsLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_above="@+id/textMoreVideo"
+                android:src="@drawable/class_timetable" />
+
+            <com.algubra.manager.CustomTextViewBold
+                android:id="@+id/textMoreVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/class_time_table"
+                android:layout_alignParentBottom="true"
+
+                android:textColor="@color/white"
+                android:textSize="22dp"
+
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscroll"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/namelayout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/stName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="50"
+                    android:text="Name"
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="14sp" />
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/contact_textcolor"
+                    />
+
+                <com.algubra.manager.CustomTextViewSemiBold
+                    android:id="@+id/stnameValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="50"
+                    android:text="Gayathri"
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fromlayout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/leaveDateFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="50"
+                    android:text="From Date"
+
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="14sp" />
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/contact_textcolor"
+                    />
+
+                <com.algubra.manager.CustomTextViewSemiBold
+                    android:id="@+id/leaveDateFromValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="50"
+                    android:text="12/06/2017"
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tolayout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/leaveDateTo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="50"
+                    android:text="To Date"
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="14sp" />
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/contact_textcolor"
+                    />
+
+                <com.algubra.manager.CustomTextViewSemiBold
+                    android:id="@+id/leaveDateToValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="50"
+                    android:text="12/06/2017"
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reasonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/reason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="48"
+                    android:layout_gravity="top"
+                    android:text="Reason for Leave"
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="14sp" />
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="top"
+                    android:textColor="@color/contact_textcolor"
+                    />
+
+                <!--<com.algubra.manager.CustomTextViewNormal
+                    android:id="@+id/reasonValue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="50"
+                    android:text="@string/test_msg"
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="14sp"
+                    android:singleLine="false"
+                    />-->
+            </LinearLayout>
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:id="@+id/reasonValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/test_msg"
+                android:textColor="@color/contact_textcolor"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:singleLine="false"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

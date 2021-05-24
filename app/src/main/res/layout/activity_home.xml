@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainrelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscroll">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/indicator"
+            android:layout_height="wrap_content"
+           />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            app:radius="5dp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:foregroundGravity="center_horizontal" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toplayout"
+        android:weightSum="100"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/title_logo" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/selectschool"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="50"
+            android:gravity="top|right"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/chooseSchoolRelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                >
+
+                <ImageView
+                    android:id="@+id/switchLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/txtSwitch"
+                    android:background="@drawable/chooseschool"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/switchLanguagearrow"
+                    android:text="ISG"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/switchLanguagearrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/downarrow"
+                    android:visibility="visible"/>
+                <ListView
+                    android:id="@+id/listSchool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/txtSwitch"
+                    android:layout_toRightOf="@+id/switchLanguage"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

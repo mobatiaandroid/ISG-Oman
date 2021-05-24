@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscroll">
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/indexOfFloorPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+       <!--<LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="50">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/plan1"
+               android:background="@drawable/grey_border_rectangle"/>
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/plan2"
+                android:background="@drawable/grey_border_rectangle"/>
+        </LinearLayout>-->
+    </LinearLayout>
+</RelativeLayout>

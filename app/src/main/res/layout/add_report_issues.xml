@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscroll"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <com.algubra.manager.CustomEditTextRegular
+            android:id="@+id/enterSubject"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner_loginedittextbg"
+            android:focusableInTouchMode="true"
+            android:hint="@string/subject"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/enterStratDate"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_hint_textcolor"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/enterStratDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner_loginedittextbg"
+            android:gravity="left|center"
+            android:hint="Start Date"
+            android:imeOptions="actionNext"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_hint_textcolor"
+            android:textSize="15sp" />
+        <!--
+                <RelativeLayout
+                    android:id="@+id/pickerIOS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+                <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+                    android:id="@+id/single_day_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    app:picker_curved="true"
+                    app:picker_cyclic="true"
+                    android:visibility="visible"
+                    app:picker_mustBeOnFuture="true"
+                    app:picker_visibleItemCount="7"
+                    />
+                    <com.algubra.manager.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Done"
+                        android:textColor="@color/black"
+                        android:id="@+id/done"
+                        android:singleLine="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rounded_corner_loginedittextbg"
+                        />
+
+                </RelativeLayout>
+        -->
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/enterEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner_loginedittextbg"
+            android:gravity="left|center"
+            android:hint="End Date"
+            android:imeOptions="actionNext"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_hint_textcolor"
+            android:textSize="15sp" />
+        <!--
+                <RelativeLayout
+                    android:id="@+id/pickerIOSEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+                    <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+                        android:id="@+id/single_day_pickerEndDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        app:picker_curved="true"
+                        app:picker_cyclic="true"
+                        android:visibility="visible"
+                        app:picker_mustBeOnFuture="true"
+                        app:picker_visibleItemCount="7"
+                        />
+                    <com.algubra.manager.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Done"
+                        android:textColor="@color/black"
+                        android:id="@+id/doneEndDate"
+                        android:singleLine="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rounded_corner_loginedittextbg"
+                        />
+
+                </RelativeLayout>
+        -->
+
+        <com.algubra.manager.CustomEditTextRegular
+            android:id="@+id/enterMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_bg_contactstaff"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:hint="Reason"
+
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="5"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_hint_textcolor"
+
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/noimage"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+
+            <com.algubra.manager.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|right"
+                android:drawableTop="@drawable/add"
+                android:gravity="center"
+                android:text="Add Image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/submitLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp">
+
+            <com.algubra.manager.CustomButtonRegular
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner_loginbtn_bg"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/pickerIOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+                android:id="@+id/single_day_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_below="@+id/headerStartDate"
+                android:visibility="visible"
+                app:picker_curved="true"
+                app:picker_cyclic="true"
+                app:picker_mustBeOnFuture="true"
+                app:picker_visibleItemCount="5"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/headerStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/login_button_bg">
+
+                <com.algubra.manager.CustomTextViewSemiBold
+                    android:id="@+id/done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/dismissStartDatePicker"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pickerIOSEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+                android:id="@+id/single_day_pickerEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_below="@+id/headerEndDate"
+                android:visibility="visible"
+                app:picker_curved="true"
+                app:picker_cyclic="true"
+                app:picker_mustBeOnFuture="true"
+                app:picker_visibleItemCount="5" />
+
+            <RelativeLayout
+                android:id="@+id/headerEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/login_button_bg">
+
+                <com.algubra.manager.CustomTextViewSemiBold
+                    android:id="@+id/doneEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/dismissEndDatePicker"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="commoncolorbg">#efeff4</color>
+    <color name="commonexpandbg">#A6A6A6</color>
+    <color name="commonexpanddivider">#666666</color>
+    <color name="loginbtnBg">#0980B3</color>
+    <color name="signUpbtnBg">#5E7BB4</color>
+    <color name="newstudentsubmit">#02AFEF</color>
+    <color name="newstudentselectphoto">#92A9B3</color>
+    <color name="schoolsupplycolour">#F1F1F1</color>
+    <color name="schoolsupplyitemtitlecolour">#0980B3</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="secondtransparent">#80000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="drawerdivider">#993399</color>
+    <color name="spinner">#BC1B8D</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="evenrow">#971170</color>
+    <color name="click">#68933AAB</color>
+    <color name="green">#33BD1A</color>
+    <color name="blue">#55D4ED</color>
+    <color name="red">#FF0000</color>
+    <color name="location_bar">#971170</color>
+    <color name="caregorybackgound">#971170</color>
+    <color name="caregorybackgounds">#971170</color>
+    <color name="shadow">#D8000000</color>
+    <color name="background">#f2f2f2</color>
+    <color name="comfort">#7DC4DB</color>
+    <color name="select">#F0E39C</color>
+    <color name="hint">#7c000000</color>
+    <color name="login_button_bg">#035B2B</color>
+    <color name="login_edittext_bg">#E9E9E9</color>
+    <color name="login_hint_textcolor">#939393</color>
+    <color name="forgot_pswd">#6E6E6E</color>
+    <color name="dark_green">#0A8600</color>
+    <color name="isg_int_blue">#04699d</color>
+    <color name="dark_grey">#C2C2C2</color>
+    <color name="contact_textcolor">#282828</color>
+    <color name="contact_value_textcolor">#EEEEEE</color>
+    <color name="events_bg">#259056</color>
+    <color name="event_detail_buttonattend_bg">#0054A6</color>
+    <color name="event_detail_not_attend_color">#F80000</color>
+    <color name="newsletter_red">#BB3434</color>
+    <color name="cal_row_1">#EFA345</color>
+    <color name="cal_row_2">#802581</color>
+    <color name="cal_row_3">#e60f1d</color>
+    <color name="cal_row_4">#00194d</color>
+    <color name="calendar_selector">#3FAA6F</color>
+    <color name="calendar_blue_selector">#2F93C6</color>
+    <color name="btnBgCommon">#408DC8</color>
+    <color name="split_bg">#4dc4cf</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="history_bg">#F0F0F0</color>
+    <color name="history_bg_1">#F5F5F5</color>
+    <color name="history_bg_2">#CCCCCC</color>
+
+
+</resources>

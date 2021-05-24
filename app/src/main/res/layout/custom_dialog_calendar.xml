@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/dialogtopcurve"
+            android:gravity="center"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:scaleType="fitCenter" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/roundblue"
+            android:src="@drawable/calendarnodpi"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialogbottomcurve">
+
+
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/alertHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center_horizontal"
+            android:text="Calendar Event"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/alertHead"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        <ScrollView
+            android:id="@+id/eventNameScroll"
+            android:layout_below="@+id/eventDate"
+            android:background="@drawable/rectangular_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:layout_height="120dp"
+            android:scrollbars="none">
+            <com.algubra.manager.CustomTextViewNormal
+            android:id="@+id/eventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:text="Autumn Term Finishes"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+ </ScrollView>
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_below="@+id/eventTitle"
+            android:gravity="center_horizontal"
+            android:text="dd MM yyyy hh:mm a"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/calendarButtons"
+            android:layout_below="@+id/eventNameScroll"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+
+            android:weightSum="100"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50">
+                <Button
+                    android:id="@+id/dismiss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:background="@drawable/buttonred"
+                    android:text="Dismiss"
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50">
+                <Button
+                    android:id="@+id/addToCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button"
+                    android:text="Add To Calendar "
+
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

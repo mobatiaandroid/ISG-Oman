@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!-- PARENT -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_green_isg"
+    android:layout_margin="10dp">
+    <View
+        android:layout_width="2dp"
+        android:layout_height="50dp"
+        android:id="@+id/view"></View>
+
+    <com.algubra.manager.CustomTextViewSemiBold
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/date"
+        android:gravity="center_vertical"
+        android:singleLine="false"
+        android:text="gggg"
+        android:textColor="@color/login_button_bg"
+        />
+    <com.algubra.manager.CustomTextViewSemiBold
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/rightcheck"
+        android:gravity="center_vertical"
+        android:singleLine="false"
+        android:text="10/10/2017"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/red"
+        />
+
+    <ImageView
+        android:id="@+id/rightcheck"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+
+        android:background="@drawable/downarrow"
+        android:scaleType="centerCrop"
+
+        />
+</RelativeLayout>

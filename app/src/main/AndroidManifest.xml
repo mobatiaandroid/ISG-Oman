@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.algubra"
+    android:targetSandboxVersion="1"
+    tools:targetApi="o">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    -->
+    <application
+        android:name=".appcontroller.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:allowClearUserData="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="q">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".activity.splash.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.settings.TermsOfUseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.leaves.LeavesActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.courses.CourseDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.quotesandstories.QuotesDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+
+
+        <activity
+            android:name=".activity.courses.CoursesListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.news.NewsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.quotesandstories.QuotesandStoriesActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+
+
+        <activity
+            android:name=".activity.timetable.TimeTableDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+
+        <activity
+            android:name=".activity.timetable.TimeTableHomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.registration.RegistrationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.home.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.gallery.GalleryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.login.ConfirmLogin"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.settings.SettingsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.reportissues.ReportIssuesListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.staffdirectory.StaffListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.newsletter.NewsLetterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.lostandfound.LostandFoundListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.staffdirectory.StaffDirectoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".activity.aboutus.AboutusRecyclerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.lostandfound.LostandFoundDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.aboutus.AboutUsDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.contactus.ContactUsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.contactus.FloorPlanActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.contactus.ShowMap"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.contactus.LocationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.events.EventListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.events.EventDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.clubs.ClubListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.clubs.ClubDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.timetable.TimeTableActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.loadweburl.LoadWebUrlActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.loadweburl.LoadImageWebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.loadweburl.LoadWebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.specialmessages.SpecialMessageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.specialmessages.SpecialMessageDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.leaves.LeaveRequestSubmissionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name=".activity.notification.NotificationListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.notification.types.Image"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.notification.types.Audio"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".activity.notification.types.Text"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.notification.types.Video"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.studentawards.StudentAwardsListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.pdf.PdfReader"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.pdf.PdfFromAsset"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+
+
+        <activity
+            android:name=".activity.calendar.CalendarActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.newsletter.NewsLetterDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.leaves.LeavesDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".activity.studentprofile.StudentProfileListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.circulars.CircularActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.studentprofile.VerifyOtp"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.userprofile.EditProfileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.userprofile.UserProfileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.schedules.SchedulesActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.curriculam.CurriculamActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.worksheet.WorkSheetSubjectListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.worksheet.WorksheetListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.homework.HomeWorkListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.homework.HomeWorkListDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.homework.HomeWorkListDetailActivityNew"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.homework.HomeWorkSubjectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.quotesandstories.StroryDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.lostandfound.PostLostandFoundActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.studentleaders.StudentLeadersListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".activity.notification.types.AudioActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.notification.types.OpenYouTubePlayerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.videos.OpenYouTubePlayerVideoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.videos.VideosListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".activity.userprofile.EditProfileActivity_New"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name=".activity.pdf.PDFViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name=".activity.pdf.PDFViewActivityWH"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name=".activity.pdf.PdfReaderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name=".activity.pdf.PDFTest"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name=".activity.pdf.PDFViewActivityHomeWork"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--<service android:name=".fcm.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>-->
+        <service
+            android:name=".service.OnClearFromRecentService"
+            android:stopWithTask="false" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCkheO4SXViv3gBvtzTMl4sGWf7WY80Dag" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.algubra.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

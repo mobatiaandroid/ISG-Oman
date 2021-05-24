@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundscroll">
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+    <Spinner
+        android:id="@+id/spinnerSelectstudent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeHeader"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/grey_border_rectangle"
+        />
+
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/expandableListView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:overScrollMode="never"
+            android:listSelector="@android:color/transparent"
+            android:groupIndicator="@null"
+            android:layout_marginTop="10dp"
+            android:childDivider="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="1dp"
+            />
+</LinearLayout>

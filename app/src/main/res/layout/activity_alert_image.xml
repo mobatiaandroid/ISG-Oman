@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeHeader"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"
+                android:id="@+id/img"
+                android:padding="3dp"
+                android:layout_gravity="center|top"
+                android:adjustViewBounds="true"
+                />
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".75"
+                android:layout_margin="10dp"
+                android:textColor="@color/contact_textcolor"
+                android:id="@+id/description"
+                android:text="@string/test"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

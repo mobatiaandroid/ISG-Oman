@@ -1,0 +1,485 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscroll">
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeHeader"/>
+
+
+    <RelativeLayout
+        android:id="@+id/commonRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeHeader"
+        android:gravity="center_vertical"
+        >
+
+<View
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/dark_grey"
+    android:visibility="gone"
+    ></View>
+
+        <RelativeLayout
+            android:id="@+id/dateRel"
+            android:layout_below="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/relDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/login_button_bg" >
+                <LinearLayout
+                    android:id="@+id/linearDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_marginRight="10dp"
+                    android:weightSum="90">
+
+                    <TextView
+                        android:id="@+id/daySpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="30"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="DAY"
+                        android:textColor="@color/white"
+                        style="@style/SpinnerStyle"
+                        android:background="@drawable/dropnew"
+                        />
+
+                    <TextView
+                        android:id="@+id/monthSpinner"
+                       android:layout_width="0dp"
+                        android:textColor="@color/white"
+                        style="@style/SpinnerStyle"
+
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="30"
+                        android:text="MONTH"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/dropnew"
+                        />
+
+                    <TextView
+                        android:id="@+id/yearSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="30"
+                        android:text="YEAR"
+                        android:textColor="@color/white"
+                        style="@style/SpinnerStyle"
+
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/dropnew"
+                        />
+                </LinearLayout>
+
+                <!--
+                                <LinearLayout
+                                    android:id="@+id/linearDate"
+                                    android:layout_width="match_parent"
+                                    android:weightSum="90"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="wrap_content">
+                                    <Spinner
+                                        android:id="@+id/daySpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_weight="30"
+                                        android:dropDownWidth="120dp"
+                                        android:spinnerMode="dropdown"
+                                        android:minWidth="200dp"
+                                        android:background="#3FAA6F" />
+
+                                    <Spinner
+                                        android:id="@+id/monthSpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_toRightOf="@+id/daySpinner"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_weight="30"
+                                        android:layout_marginLeft="8dp"
+                                        android:dropDownWidth="120dp"
+                                        android:spinnerMode="dropdown"
+                                        android:minWidth="200dp"
+                                        android:background="#3FAA6F" />
+
+                                    <Spinner
+                                        android:id="@+id/yearSpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_weight="30"
+                                        android:dropDownWidth="120dp"
+                                        android:spinnerMode="dropdown"
+                                        android:minWidth="200dp"
+                                        android:layout_toRightOf="@+id/monthSpinner"
+                                        android:background="#3FAA6F" />
+                                </LinearLayout>
+                -->
+<!--
+                <TextView
+                    android:id="@+id/clearData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/linearDate"
+                    android:gravity="center"
+                    />
+-->
+
+                <LinearLayout
+                    android:id="@+id/linearClearData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/linearDate"
+                    android:weightSum="90">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/reset"
+                        android:layout_weight="30"
+                        android:layout_gravity="right"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="invisible"
+                        android:background="@color/calendar_selector"
+                        android:gravity="center"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/reset"
+                        android:layout_weight="30"
+                        android:layout_gravity="right"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:visibility="invisible"
+                        android:background="@color/calendar_selector"
+                        android:gravity="center"
+                        />
+
+                    <ImageView
+                        android:id="@+id/clearData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/reset"
+                        android:layout_weight="30"
+                        android:layout_gravity="right"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:background="@color/calendar_selector"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+                <!--
+                                <ImageView
+                                    android:id="@+id/clearData"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_below="@+id/linearDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/reset"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingLeft="5dp"
+                                    android:background="@color/calendar_selector"
+                                    android:gravity="center"
+                                    />
+                -->
+
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/dateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:layout_below="@+id/linearClearData"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="50sp"
+                    android:text="23"/>
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/monthText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="invisible"
+                    android:layout_alignBottom="@+id/dateText"
+                    android:layout_toRightOf="@+id/dateText"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="25sp"
+                    android:text="Tuesday"/>
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/yearText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="invisible"
+                    android:layout_alignBottom="@+id/monthText"
+                    android:layout_toRightOf="@+id/monthText"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="1dp"
+                    android:textSize="25sp"
+                    android:text="2017"/>
+
+                <RelativeLayout
+                    android:id="@+id/relMntYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateText"
+                    android:visibility="gone"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        android:id="@+id/mnthTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/spaceTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/mnthTxt"
+                        android:text=", "
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/yearTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/spaceTxt"
+                        android:textSize="20sp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/moreImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:text="Term Calendar"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignBottom="@+id/relMntYear"
+                    android:layout_toLeftOf="@+id/addAllBtn"
+                    />
+
+                <ImageView
+                    android:id="@+id/addAllBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/relMntYear"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/delAllBtn"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/delAllBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/relMntYear"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                   android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/dividerView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relDate"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/calList"
+        style="@style/ListStyleWithoutDivider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/commonRel"
+        android:footerDividersEnabled="false"
+        />
+
+    <RelativeLayout
+        android:id="@+id/commonRelList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeHeader"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:id="@+id/dateRelList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/relDateList"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:background="@color/transparent">
+
+                <LinearLayout
+                    android:id="@+id/linearDateList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/transparent"
+                    android:weightSum="90">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="30"
+                        android:minWidth="200dp">
+
+                        <RelativeLayout
+                            android:id="@+id/daySpinnerList"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:minWidth="200dp" />
+
+                        <ListView
+                            android:id="@+id/dayListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:dividerHeight="1dp"
+                            android:padding="1dp"
+                            android:divider="@color/white"
+                            android:drawSelectorOnTop="true"
+                            android:background="@color/white"
+                            android:layout_below="@+id/daySpinnerList"
+                            >
+
+                        </ListView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="30"
+                        android:minWidth="200dp">
+
+                        <RelativeLayout
+                            android:id="@+id/monthSpinnerList"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:minWidth="200dp" />
+
+                        <ListView
+                            android:id="@+id/monthListView"
+                            android:visibility="gone"
+                            android:background="@color/white"
+                            android:dividerHeight="1dp"
+                            android:padding="1dp"
+                            android:divider="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/monthSpinnerList"
+                            >
+
+                        </ListView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="30"
+                        android:minWidth="200dp">
+
+                        <RelativeLayout
+                            android:id="@+id/yearSpinnerList"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:minWidth="200dp" />
+
+                        <ListView
+                            android:id="@+id/yearListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:padding="1dp"
+                            android:background="@color/white"
+                            android:dividerHeight="1dp"
+                            android:divider="@color/white"
+                            android:layout_below="@+id/yearSpinnerList"
+                            >
+
+                        </ListView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

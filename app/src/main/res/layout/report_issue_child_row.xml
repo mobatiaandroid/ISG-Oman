@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CHILD -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/gray">
+    <com.algubra.manager.CustomTextViewNormal
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="sahbshs"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:gravity="left|center_vertical"
+        />
+
+
+</RelativeLayout>

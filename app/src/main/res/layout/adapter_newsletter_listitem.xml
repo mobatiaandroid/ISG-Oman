@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_centerInParent="true"
+    android:background="@color/white"
+    android:id="@+id/listBackGround"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/relSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+            <View
+                android:id="@+id/view"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+
+                />        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:gravity="left|center"
+            android:id="@+id/img"
+            >
+            <RelativeLayout
+                android:id="@+id/relativeMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+               <ImageView
+                    android:id="@+id/Img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                   android:padding="3dp"
+                   />
+                <!--<de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/Img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/activities"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/contact_textcolor"
+                    />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/Img">
+                    <com.algubra.manager.CustomTextViewSemiBold
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ISG REIGNS SUPREME "
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                    <com.algubra.manager.CustomTextViewSemiBold
+                        android:id="@+id/createdDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="05 May 2017"
+                        android:layout_marginTop="5dp"
+
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/newsletter_red"
+                        />
+                    <com.algubra.manager.CustomTextViewSemiBold
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/test_msg"
+                        android:maxLines="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                </LinearLayout>
+                <!--<ImageView
+                    android:id="@+id/arrowImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/backbtn"
+                    android:rotation="180"/>-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+            <ImageView
+                android:id="@+id/arrowImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:src="@drawable/backbtn"
+                android:rotation="180"/>
+        </LinearLayout>
+
+       </LinearLayout>
+
+</RelativeLayout>

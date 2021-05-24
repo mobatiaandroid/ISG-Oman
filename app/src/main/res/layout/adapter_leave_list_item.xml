@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listBackGround"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/relSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:orientation="horizontal"
+            android:weightSum="90">
+
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:id="@+id/listDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:layout_alignParentLeft="true"
+                android:text="12/05/2017-13/05/2017"
+                android:textColor="@color/contact_textcolor"
+                android:layout_toLeftOf="@+id/listStatus"
+                android:textSize="15sp" />
+
+            <!--<com.algubra.manager.CustomTextViewSemiBold
+                android:id="@+id/listName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:text="NAS DUBAI"
+                android:layout_weight="30"
+                android:paddingLeft="10dp"
+                android:gravity="center|left"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:visibility="gone"/>-->
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:id="@+id/listStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:layout_alignParentRight="true"
+                android:text="Pending"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+
+            <ImageView
+                android:id="@+id/arrowImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:rotation="180"
+                android:src="@drawable/backbtn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

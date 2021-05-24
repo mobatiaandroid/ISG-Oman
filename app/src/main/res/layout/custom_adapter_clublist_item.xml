@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:weightSum="100"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <!--<com.mobatia.naisapp.manager.CustomFontSansProTextBlack
+                android:id="@+id/start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="xyz"
+                android:textSize="12dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
+            <com.mobatia.naisapp.manager.CustomFontSansProTextBlack
+                android:id="@+id/end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="xyz"
+                android:textSize="12dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="105"
+                android:visibility="gone"
+                >
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/start_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:text=" 12 january"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    />
+                <com.algubra.manager.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:layout_weight="5"
+                    android:textSize="12sp"
+                    />
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/start_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:text="12:45"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="100"
+                android:visibility="gone"
+                >
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/end_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="55"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="12sp"
+                    />
+                <com.algubra.manager.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:layout_weight="5"
+                    android:textSize="12sp"
+                    />
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/end_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/eventsbg"
+            android:layout_width="25dp"
+            android:layout_height="75dp"
+            android:background="@drawable/evnticon"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="90"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bubble"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:id="@+id/clubName"
+                android:layout_width="0dp"
+                android:layout_weight="90"
+                android:layout_height="wrap_content"
+                android:text="Abcd"
+                android:layout_marginLeft="25dp"
+                android:singleLine="true"
+                android:textColor="@color/contact_textcolor"
+                android:layout_gravity="center_vertical"
+                />
+            <LinearLayout
+                android:id="@+id/buttonholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/view"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

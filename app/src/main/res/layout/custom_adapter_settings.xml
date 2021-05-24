@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listBackGround"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/relSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="left|center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imagicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90">
+
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:id="@+id/listTxtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/arrowImg"
+                android:layout_toRightOf="@+id/imagicon"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="NAS DUBAI"
+                android:textColor="@color/login_button_bg"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+
+            <ImageView
+                android:id="@+id/arrowImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:rotation="180"
+                android:src="@drawable/backbtn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

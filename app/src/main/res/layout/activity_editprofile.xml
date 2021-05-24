@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundscroll">
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeHeader">
+
+</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Img"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/user_profile"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/isg_int_blue"
+                />
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+<com.algubra.manager.CustomEditTextRegular
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/editTextName"
+    android:hint="Name"
+    android:gravity="left|center"
+    android:textSize="15sp"
+    android:singleLine="true"
+    android:imeOptions="actionNext"
+    android:focusableInTouchMode="true"
+    android:textColorHint="@color/login_hint_textcolor"
+    android:textColor="@color/black"
+    android:paddingLeft="20dp"
+    android:background="@drawable/rounded_corner_loginedittextbg"/>
+
+            </LinearLayout>
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+                <com.algubra.manager.CustomEditTextRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editTextAddress"
+                    android:hint="Address"
+                    android:textSize="15sp"
+                    android:nextFocusForward="@+id/editTextPostcode"
+
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:gravity="left|center"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="@color/login_hint_textcolor"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_corner_loginedittextbg"/>
+
+            </LinearLayout>
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+            <com.algubra.manager.CustomEditTextRegular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editTextPhoneNo"
+                android:hint="Mobile Number"
+                android:singleLine="true"
+android:gravity="left|center"
+                android:textSize="15sp"
+                android:editable="false"
+                android:focusable="false"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/login_hint_textcolor"
+                android:textColor="@color/login_hint_textcolor"
+                android:background="@drawable/rounded_corner_loginedittextbg"/>
+
+        </LinearLayout>
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+            <com.algubra.manager.CustomEditTextRegular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editTextEmail"
+                android:hint="Email Address"
+                android:singleLine="true"
+android:gravity="left|center"
+                android:textSize="15sp"
+                android:editable="false"
+                android:focusable="false"
+android:inputType="textEmailAddress"
+                android:textColorHint="@color/login_hint_textcolor"
+                android:textColor="@color/login_hint_textcolor"
+                android:paddingLeft="20dp"
+                android:background="@drawable/rounded_corner_loginedittextbg"/>
+
+        </LinearLayout>
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post code"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+                <com.algubra.manager.CustomEditTextRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editTextPostcode"
+                    android:hint="Post code"
+                    android:singleLine="true"
+android:gravity="left|center"
+                    android:textSize="15sp"
+
+                    android:imeOptions="actionNext"
+android:inputType="number"
+                    android:textColorHint="@color/login_hint_textcolor"
+                    android:textColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/rounded_corner_loginedittextbg"/>
+
+            </LinearLayout>
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+                <com.algubra.manager.CustomEditTextRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editTextCity"
+                    android:hint="City"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+android:gravity="left|center"
+                    android:textSize="15sp"
+
+                    android:textColorHint="@color/login_hint_textcolor"
+                    android:textColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/rounded_corner_loginedittextbg"/>
+
+            </LinearLayout>
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+                <com.algubra.manager.CustomEditTextRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editTextCountry"
+                    android:hint="Country"
+                    android:singleLine="true"
+android:gravity="left|center"
+                    android:textSize="15sp"
+
+                    android:imeOptions="actionDone"
+                    android:textColorHint="@color/login_hint_textcolor"
+                    android:textColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/rounded_corner_loginedittextbg"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                >
+                <com.algubra.manager.CustomButtonBold
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/updateButton"
+                    android:textColor="@color/white"
+                    android:text="UPDATE"
+                    android:textSize="15sp"
+                    android:background="@drawable/rounded_corner_loginbtn_bg"  />                  />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscroll"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/relativeHeader"
+        android:layout_above="@id/BootomLinear"
+        android:layout_height="match_parent"/>
+
+    <!--    <com.github.barteksc.pdfviewer.PDFView-->
+    <!--        android:id="@+id/pdfView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_below="@id/relativeHeader"-->
+    <!--        android:layout_height="match_parent"/>-->
+
+    <!--    <com.github.barteksc.pdfviewer.PDFView-->
+    <!--        android:id="@+id/pdfView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_below="@id/relativeHeader"-->
+    <!--        android:layout_height="match_parent" />-->
+    <LinearLayout
+        android:id="@+id/BootomLinear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/btnBgCommon">
+        <ImageView
+            android:id="@+id/print"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_print"/>
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_download"/>
+        <ImageView
+            android:id="@+id/shared"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_share"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

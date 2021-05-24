@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "809230614464",
+    "firebase_url": "https://placeapp-1168.firebaseio.com",
+    "project_id": "placeapp-1168",
+    "storage_bucket": "placeapp-1168.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809230614464:android:01c5b5ae07c6c9c7",
+        "android_client_info": {
+          "package_name": "com.mobatia.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809230614464-3rlpudpi4foqeevdptgf4b2b350btqek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlLlqQMlmm3j4j2xEN3lv_NlF5DaDEBrg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809230614464:android:0e318f31d643976c",
+        "android_client_info": {
+          "package_name": "com.algubra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809230614464-3rlpudpi4foqeevdptgf4b2b350btqek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlLlqQMlmm3j4j2xEN3lv_NlF5DaDEBrg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

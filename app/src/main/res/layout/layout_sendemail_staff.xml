@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/sendEmailDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/dialogtopcurve"
+                android:gravity="center"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/iconImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/roundblue"
+                android:gravity="center"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/dialogbottomcurve">
+
+
+            <com.algubra.manager.CustomTextViewBold
+                android:id="@+id/alertHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Contact Form"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.algubra.manager.CustomEditTextNormal
+                android:id="@+id/text_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/alertHead"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:layout_gravity="left"
+                android:hint="Enter your subject here..."
+                android:textColorHint="@color/login_hint_textcolor"
+                android:textColor="@color/login_hint_textcolor"
+                android:background="@drawable/grey_border_rectangle"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter content:"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/login_hint_textcolor"
+                android:textSize="15sp"/>
+            <com.algubra.manager.CustomEditTextNormal
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="top"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/login_hint_textcolor"
+                android:textColor="@color/login_hint_textcolor"
+                android:lines="5"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/grey_border_rectangle"
+
+                />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/text_content"
+                android:text="SUBMIT"
+                android:background="@drawable/button"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/submitButton"
+                android:text="CANCEL"
+                android:background="@drawable/buttonred"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ISG_Oman_24_Oct.iml" filepath="$PROJECT_DIR$/.idea/modules/ISG_Oman_24_Oct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ISG_Oman_24_Oct.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ISG_Oman_24_Oct.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simple-crop-image-lib/ISG_Oman_24_Oct.simple-crop-image-lib.iml" filepath="$PROJECT_DIR$/.idea/modules/simple-crop-image-lib/ISG_Oman_24_Oct.simple-crop-image-lib.iml" />
+    </modules>
+  </component>
+</project>

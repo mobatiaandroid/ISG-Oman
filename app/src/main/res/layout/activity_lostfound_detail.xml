@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundscroll"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="20dp">
+             <com.algubra.manager.CustomTextViewBold
+                 android:id="@+id/listTxtTitle"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:text="NAS DUBAI"
+                 android:gravity="center|left"
+                 android:textSize="15sp"
+                 android:layout_alignParentLeft="true"
+                 android:textColor="@color/login_button_bg"
+                 android:layout_centerHorizontal="true"
+                 android:singleLine="true" />
+             <com.algubra.manager.CustomTextViewBold
+                 android:id="@+id/listTxtDate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:text="NAS DUBAI"
+                 android:gravity="center|left"
+                 android:textSize="15sp"
+                 android:visibility="gone"
+                 android:layout_alignParentRight="true"
+                 android:textColor="@color/black"
+                 android:layout_centerHorizontal="true"
+                 android:singleLine="true" />
+         </RelativeLayout>
+         <ImageView
+             android:id="@+id/lostImage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/demo"
+             android:layout_margin="10dp"
+             android:visibility="invisible"
+
+             />
+
+         <com.algubra.manager.CustomTextViewBold
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="Description"
+             android:id="@+id/descriptionHeader"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:textColor="@color/black"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:id="@+id/contactDescriptionLinear"
+
+             android:layout_marginTop="10dp">
+             <com.algubra.manager.CustomTextViewSemiBold
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:id="@+id/description"
+                 android:textColor="@color/contact_textcolor"
+                 android:text=""/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                 android:orientation="horizontal"
+                 android:weightSum="20"
+                 android:id="@+id/contactNameLinear"
+
+                 >
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_weight="7"
+                     android:text="Contact Name"
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:text=":"
+                     android:textColor="@color/contact_textcolor" />
+
+                 <com.algubra.manager.CustomTextViewSemiBold
+                     android:id="@+id/contactName"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:layout_weight="15"
+                     android:text=" "
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                 android:orientation="horizontal"
+                 android:weightSum="20"
+                 android:id="@+id/contactEmailLinear"
+
+                 >
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_weight="7"
+                     android:text="Contact Email"
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:text=":"
+                     android:textColor="@color/contact_textcolor" />
+
+                 <com.algubra.manager.CustomTextViewSemiBold
+                     android:id="@+id/contactEmail"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:layout_weight="15"
+                     android:text=" "
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                 android:orientation="horizontal"
+                 android:weightSum="20"
+                 android:id="@+id/contactPhoneLinear"
+                 >
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_weight="7"
+                     android:text="Contact Phone"
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:text=":"
+                     android:textColor="@color/contact_textcolor" />
+
+                 <com.algubra.manager.CustomTextViewSemiBold
+                     android:id="@+id/contactPhone"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:layout_weight="15"
+                     android:text=" "
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                 android:orientation="horizontal"
+                 android:weightSum="20"
+                 android:visibility="gone"
+                 >
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_weight="7"
+                     android:text="Posted By"
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:text=":"
+                     android:textColor="@color/contact_textcolor" />
+
+                 <com.algubra.manager.CustomTextViewSemiBold
+                     android:id="@+id/postedBy"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:layout_weight="15"
+                     android:text=" "
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                 android:orientation="horizontal"
+                 android:weightSum="20"
+                 android:visibility="gone"
+
+                 >
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_weight="7"
+                     android:text="Posted Email"
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:text=":"
+                     android:textColor="@color/contact_textcolor" />
+
+                 <com.algubra.manager.CustomTextViewSemiBold
+                     android:id="@+id/postedEmail"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:layout_weight="15"
+                     android:text=" "
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                 android:orientation="horizontal"
+                 android:weightSum="20"
+                 android:visibility="gone"
+
+                 >
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_weight="7"
+                     android:text="Posted Phone"
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+
+                 <com.algubra.manager.CustomTextViewBold
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:text=":"
+                     android:textColor="@color/contact_textcolor" />
+
+                 <com.algubra.manager.CustomTextViewSemiBold
+                     android:id="@+id/postedPhone"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="left|center"
+                     android:layout_marginLeft="10dp"
+                     android:layout_weight="15"
+                     android:text=" "
+                     android:textColor="@color/contact_textcolor"
+                     android:textSize="14sp" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+<!--
+         <WebView
+             android:id="@+id/lostImage"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:visibility="gone"
+             android:scrollbars="none"
+
+
+             />
+-->
+
+         <!--
+                 app:zoomage_restrictBounds="false"
+             app:zoomage_animateOnReset="true"
+             app:zoomage_autoResetMode="UNDER"
+             app:zoomage_autoCenter="true"
+          app:zoomage_zoomable="true"
+             app:zoomage_translatable="true"
+             app:zoomage_minScale="0.6"
+             app:zoomage_maxScale="8"
+
+         -->
+     </LinearLayout>
+ </ScrollView>
+</LinearLayout>

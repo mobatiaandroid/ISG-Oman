@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!-- PARENT -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_green_isg"
+    android:layout_margin="10dp"
+    >
+    <View
+        android:layout_width="2dp"
+        android:layout_height="50dp"
+        android:id="@+id/view"
+        android:background="@color/login_button_bg"/>
+
+    <com.algubra.manager.CustomTextViewSemiBold
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/rightcheck"
+        android:gravity="center_vertical"
+        android:singleLine="false"
+        android:text="Approved"
+        android:background="@color/transparent"
+        android:textColor="@color/login_button_bg"
+        />
+    <com.algubra.manager.CustomTextViewNormal
+        android:id="@+id/student"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/text1"
+        android:gravity="center"
+        android:singleLine="false"
+        android:layout_centerInParent="true"
+        android:text="student"
+        android:textColor="@color/isg_int_blue"
+        android:textSize="16sp" />
+    <com.algubra.manager.CustomTextViewSemiBold
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/student"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:singleLine="false"
+        android:text="10/10/2017"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/login_hint_textcolor"
+        />
+
+    <ImageView
+        android:id="@+id/rightcheck"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+
+        android:background="@drawable/downarrow"
+        android:scaleType="centerCrop"
+
+        />
+</RelativeLayout>

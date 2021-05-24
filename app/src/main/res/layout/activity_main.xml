@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup1"
+        android:visibility="visible"/>
+    <ListView
+        android:id="@+id/listSchool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/popup2"
+        />
+
+</LinearLayout>

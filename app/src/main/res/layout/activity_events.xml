@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@drawable/backgroundscroll">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeHeader"></RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:layout_below="@+id/relativeHeader">
+        <LinearLayout
+            android:id="@+id/eventLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="42"
+            android:background="@color/events_bg"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mSporsEventListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/relativeHeader"
+        android:background="@android:color/transparent"/>
+
+
+
+
+</RelativeLayout>

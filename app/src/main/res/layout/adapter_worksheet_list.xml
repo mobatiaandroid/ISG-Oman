@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listBackGround"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/relSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="92"
+          android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:orientation="vertical">
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:id="@+id/listTxtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/arrowImg"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="NAS DUBAI"
+                android:textColor="@color/login_button_bg"
+                android:textSize="15sp" />
+
+            <com.algubra.manager.CustomTextViewNormal
+                android:id="@+id/listTxtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="NAS DUBAI"
+                android:textColor="@color/forgot_pswd"
+                android:textSize="12sp" />
+        </LinearLayout>
+          <LinearLayout
+              android:id="@+id/operationLinear"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:layout_weight="42"
+              android:weightSum="42"
+              android:visibility="gone">
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="14"
+                  android:orientation="vertical"
+                  android:gravity="center">
+              <ImageView
+                  android:id="@+id/share"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/share_new_homework"
+                  android:layout_gravity="center"/>
+                  <TextView
+                      android:textSize="10sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="Share"/>
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="14"
+                  android:orientation="vertical"
+                  android:gravity="center">
+                  <ImageView
+                      android:id="@+id/download"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/download_new_homework"
+                      android:layout_gravity="center"/>
+                  <TextView
+                      android:textSize="10sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Download"/>
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="14"
+                  android:orientation="vertical"
+                  android:gravity="center">
+                  <ImageView
+                      android:id="@+id/upload"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/share_new_homework"
+                      android:layout_gravity="center"/>
+                  <TextView
+                      android:textSize="10sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Upload"
+                      android:gravity="center"/>
+              </LinearLayout>
+          </LinearLayout>
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+
+            <ImageView
+                android:id="@+id/arrowImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:rotation="180"
+                android:src="@drawable/backbtn" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/listBackGround"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/relSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal"
+        android:weightSum="120">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+            <View
+                android:id="@+id/view"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+
+                />        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:visibility="visible"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/imagicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:id="@+id/listTxtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="NAS DUBAI"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:textSize="15sp"
+                android:textColor="@color/login_button_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/arrowImg"
+                android:layout_toRightOf="@+id/imagicon"
+                android:singleLine="true" />
+            <com.algubra.manager.CustomTextViewNormal
+                android:id="@+id/listTxtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="NAS DUBAI"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:gravity="center|left"
+
+                android:layout_marginTop="5dp"
+                android:textColor="@color/login_button_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/arrowImg"
+                android:layout_toRightOf="@+id/imagicon"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+            <ImageView
+                android:id="@+id/arrowImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:src="@drawable/backbtn"
+                android:rotation="180"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg">
+
+<!--    <com.algubra.manager.CustomTextViewSemiBold-->
+<!--        android:id="@+id/app_version"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="@string/version"-->
+<!--        android:textColor="@color/forgot_pswd"-->
+<!--        android:visibility="visible" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/loginlogo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="70"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relUserName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/rounded_corner_loginedittextbg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/call" />
+
+                <com.algubra.manager.CustomEditTextRegular
+                    android:id="@+id/edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/login_hint_textcolor"
+                    android:textColorHint="@color/login_hint_textcolor"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relPassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/relUserName"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner_loginedittextbg"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/password" />
+
+                <com.algubra.manager.CustomEditTextRegular
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:text=""
+
+                    android:textColor="@color/login_hint_textcolor"
+                    android:textColorHint="@color/login_hint_textcolor"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/relButtonsHolder"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner_loginbtn_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.algubra.manager.CustomButtonRegular
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.algubra.manager.CustomTextViewSemiBold
+                    android:id="@+id/txtPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/forgot_pswd"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loginpagesignupinfo"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.algubra.manager.CustomTextViewSemiBold
+                    android:id="@+id/txtAlreadySignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_alreay_sign_in"
+                    android:textColor="#6E6E6E"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corner_loginbtn_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.algubra.manager.CustomButtonRegular
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relGuestUser"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner_loginbtn_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.algubra.manager.CustomButtonRegular
+                    android:id="@+id/btnGuestUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/guest"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/version"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/grey"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="23"
+        android:layout_marginTop="10dp"
+
+        >
+        <LinearLayout
+            android:id="@+id/manageadminLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:background="@color/login_button_bg">
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left|center"
+                android:textColor="@color/white"
+                android:id="@+id/manageradminTitle"
+                android:minLines="2"
+                android:maxLines="2"
+                android:text="hdszhshhadhhszahxhdhchdhdhhdfhhhfhhh"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/emailLinear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="13"
+            android:gravity="right|center"
+            android:padding="5dp"
+            android:background="@color/contact_value_textcolor">
+            <com.algubra.manager.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left|center"
+                android:minLines="2"
+                android:maxLines="2"
+                android:textColor="@color/contact_textcolor"
+                android:id="@+id/manageradminValue"
+                android:text="hadfsdfsjdsjfjdgjngjgjgjgjgjgjgjgjgjkkkkfgjjjjdsjdsjdsjdsjs"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

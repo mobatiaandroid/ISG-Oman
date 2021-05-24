@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscroll"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <com.algubra.manager.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration :"
+            android:singleLine="true"
+            android:id="@+id/duration"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black" />
+        <com.algubra.manager.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdsd"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:id="@+id/durationValue"
+            android:textColor="@color/black" />
+
+
+        <com.algubra.manager.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noofseats"
+            android:drawablePadding="10dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="No of seats :"
+            android:textColor="@color/black" />
+        <com.algubra.manager.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jhjh"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:id="@+id/noofseatsValue"
+            android:textColor="@color/black" />
+
+
+        <com.algubra.manager.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description :"
+            android:drawablePadding="10dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/description"
+            android:textColor="@color/black" />
+
+
+
+       <com.algubra.manager.CustomTextViewNormal
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/descDetails"
+           android:text="@string/test"
+           android:textSize="15sp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="5dp"
+           android:textColor="@color/contact_textcolor" />
+
+
+        <com.algubra.manager.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subjects"
+            android:text="Subjects :"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black" />
+        <com.algubra.manager.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/subjectValue"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="sddjkjklkkoks"
+            android:textColor="@color/contact_textcolor" />
+
+        <com.algubra.manager.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedules"
+            android:text="Schedules :"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black" />
+        <com.algubra.manager.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/schedulesValue"
+            android:text="sddjkjklkkoks"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/contact_textcolor" />
+
+
+
+</LinearLayout>

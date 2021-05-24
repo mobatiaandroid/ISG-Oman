@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscroll"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/login_edittext_bg">
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:id="@+id/eventTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left|center"
+                    android:singleLine="true"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipisci"
+                    android:textColor="@color/contact_textcolor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/login_edittext_bg">
+
+                <ImageView
+                    android:id="@+id/bannerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/noimage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    android:orientation="vertical">
+
+                    <com.algubra.manager.CustomTextViewBold
+                        android:id="@+id/eventAttendStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text=""
+                        android:textColor="@color/event_detail_not_attend_color"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+
+                        >
+
+                        <com.algubra.manager.CustomTextViewSemiBold
+                            android:id="@+id/start_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="60"
+                            android:text=" 12 January 2014"
+                            android:textColor="@color/contact_textcolor"
+                            android:textSize="12sp" />
+
+                        <com.algubra.manager.CustomTextViewSemiBold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="|"
+                            android:textColor="@color/contact_textcolor"
+                            android:textSize="12sp" />
+
+                        <com.algubra.manager.CustomTextViewSemiBold
+                            android:id="@+id/start_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="35"
+                            android:text="12:00"
+                            android:textColor="@color/contact_textcolor"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <com.algubra.manager.CustomTextViewSemiBold
+                            android:id="@+id/end_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="60"
+                            android:text=" 12 January 2014"
+                            android:textColor="@color/contact_textcolor"
+                            android:textSize="12sp" />
+
+                        <com.algubra.manager.CustomTextViewSemiBold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="|"
+                            android:textColor="@color/contact_textcolor"
+                            android:textSize="12sp" />
+
+                        <com.algubra.manager.CustomTextViewSemiBold
+                            android:id="@+id/end_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="35"
+                            android:text="12:00"
+                            android:textColor="@color/contact_textcolor"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:orientation="vertical">
+
+                    <com.algubra.manager.CustomButtonRegular
+                        android:id="@+id/submitAttend"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/event_attend_drwable_btn"
+                        android:padding="5dp"
+                        android:text="ATTEND"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:id="@+id/addToCalendar"
+                                            android:src="@drawable/addtocalendar"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_gravity="right"
+                                            android:visibility="visible"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.algubra.manager.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="INFORMATION :"
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.algubra.manager.CustomTextViewSemiBold
+                    android:id="@+id/eventDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/test"
+                    android:textColor="@color/contact_textcolor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/registrationRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true">
+
+                    <com.algubra.manager.CustomButtonRegular
+                        android:id="@+id/registrationForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/event_attend_drwable_btn"
+                        android:gravity="left|center_vertical"
+                        android:padding="5dp"
+                        android:text="Registration Form"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/pdfDownloadImgView"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/pdficonwhite"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/parentConsernRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true">
+
+                    <com.algubra.manager.CustomButtonRegular
+                        android:id="@+id/parentConsernForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/event_attend_drwable_btn"
+                        android:gravity="left|center_vertical"
+                        android:padding="5dp"
+                        android:text="Parent Consent Form"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/parentConsernpdfDownloadImgView"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/pdficonwhite"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

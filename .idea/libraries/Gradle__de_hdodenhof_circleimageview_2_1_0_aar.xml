@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: de.hdodenhof:circleimageview:2.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-circleimageview-2.1.0.aar/9284b786dcb9dcda29cc1aed6f00a9d9/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-circleimageview-2.1.0.aar/9284b786dcb9dcda29cc1aed6f00a9d9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-circleimageview-2.1.0.aar/9284b786dcb9dcda29cc1aed6f00a9d9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-circleimageview-2.1.0.aar/3d10cb9b41fce6622a52c70a5d1c46ae/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-circleimageview-2.1.0.aar/3d10cb9b41fce6622a52c70a5d1c46ae/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-circleimageview-2.1.0.aar/3d10cb9b41fce6622a52c70a5d1c46ae/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.hdodenhof/circleimageview/2.1.0/68a48c8059a1a504c6be0fd3b1d4963654b82edc/circleimageview-2.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.hdodenhof/circleimageview/2.1.0/f099f4aafdd665b05e0c31d59b900812a172e30f/circleimageview-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

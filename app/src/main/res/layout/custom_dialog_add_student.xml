@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/dialogtopcurve"
+            android:gravity="center"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:scaleType="fitCenter" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/profile"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialogbottomcurve">
+
+
+        <com.algubra.manager.CustomTextViewSemiBold
+            android:id="@+id/alertHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center_horizontal"
+            android:text="Add Student"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        <com.algubra.manager.CustomEditTextRegular
+            android:id="@+id/text_grno"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/alertHead"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:hint="@string/student_id"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/login_hint_textcolor"
+            android:textColor="@color/login_hint_textcolor"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:imeOptions="actionNext"
+            android:background="@drawable/rounded_corner_loginedittextbg"/>
+        <com.algubra.manager.CustomEditTextRegular
+            android:id="@+id/text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/text_grno"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:hint="@string/eight_digit_phone_no"
+            android:textSize="15sp"
+
+            android:inputType="phone"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/login_hint_textcolor"
+            android:textColor="@color/login_hint_textcolor"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:background="@drawable/rounded_corner_loginedittextbg"/>
+        <com.algubra.manager.CustomEditTextRegular
+            android:id="@+id/text_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/text_phone"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:hint="@string/email_id"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/login_hint_textcolor"
+            android:textColor="@color/login_hint_textcolor"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:background="@drawable/rounded_corner_loginedittextbg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/text_email"
+            android:gravity="center"
+            android:weightSum="100"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50">
+                <Button
+                    android:id="@+id/btn_maybelater"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/buttonred"
+                    android:text="Cancel"
+                    android:textSize="15sp"
+
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50">
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button"
+                    android:text="Submit"
+                    android:textSize="15sp"
+
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
